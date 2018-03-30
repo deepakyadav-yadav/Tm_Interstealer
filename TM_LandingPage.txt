@@ -1,0 +1,113 @@
+<apex:page standardStylesheets="false" showHeader="false" sidebar="false" docType="html-5.0">
+  <title>Landing Page </title>
+  <link rel="stylesheet" href="{!URLFOR($Resource.Vlocity10_CSS)}"/>
+    <link rel="stylesheet" href="{!URLFOR($Resource.Vlocity10_2_CSS)}"/>
+    <link rel="stylesheet" href="{!URLFOR($Resource.CtD_InternetSales)}"/>   
+    <style type="text/css">
+    .buttonSpan{
+        position:relative; 
+        color: black;
+        cursor:pointer; 
+        display:inline_block;
+        background-color:#ffcc00;
+        font-family:initial;
+        font-size:28px;
+        margin-top:5%;
+        width:40%;
+        max-width:40%;
+        height:95px;
+    }
+    </style>
+    <script type="text/javascript">
+        function showBusinessLounge(){
+            console.log('show business lounge');
+                var posx = 0;
+                var posy = 0;    
+                var myevent = window.event  
+                posx=  myevent.pageX-310;
+                posy=  myevent.pageY-250;                               
+                //  $('#qtyTB').click();
+                var e =  document.getElementById('businesslounge'); 
+                if(e!=null){
+                     console.log('var e not null ' );
+                }else{ console.log('var enull' );}
+               console.log('var e defined : ' );
+                if(e.style.display == 'block')
+                    e.style.display = 'none';
+                else
+                {
+                    e.style.marginLeft=posx+'px';
+                    e.style.marginTop=posy+'px';
+                    e.style.display = 'block'; 
+                }                         
+            }
+            function validateForm(event){
+                  window.location.assign('/apex/Tm_vf_sales');
+            }
+    </script>
+    <div id="customHeader" style="background-image:url('{!$Resource.Part1}');width:100%;height: 555px;background-repeat: no-repeat;background-size:cover">
+        <div id="headerCentered">
+            <!-- <img src="{!$Resource.VideoPlay}"  style="position: relative;width:100px;height:100px;left: 18px;"/> -->
+            <br/>
+            <span style="font-size: 3.7em;color: white;">Think Smart, Be Smart, <br/> Go digital!</span> 
+            <br/><br/><br/>
+            <button class="buttonSpan" onclick="validateForm();"> Check Service Coverage </button>
+            <!--<input type="button" class="buttonSpan" onclick="validateForm();" value="Check Service Coverage"/>-->
+            <!--<span class="buttonSpan" onclick="validtaeForm();"><div style="display:block;">Check Service Coverage </div></span>-->
+        </div>
+ 
+         <!--<div id="headerbottom">
+            <button class="serviceButton" type="button" onClick="validateForm();"> Check Service Coverage</button> 
+        </div>-->                               
+     </div>
+      <div  id="businesslounge" style="display: none;position:absolute;top:490px;right:65px;border:1px solid grey;z-index:2;">
+    <div style="background: -moz-linear-gradient(top,  #442161 0%, #2f3161 50%, #2f3161 51%, #162546 100%); background: -webkit-linear-gradient(top,  #442161 0%,#2f3161 50%,#2f3161 51%,#162546 100%); background: linear-gradient(to bottom,  #442161 0%,#2f3161 50%,#2f3161 51%,#162546 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#442161', endColorstr='#162546',GradientType=0 ); width:280px !important">   
+        <div style="padding-left:8px;background-color:#F2F2F2 !important;height:310px !important; width:280px !important"> 
+            <p id="privatearea" align="middle" style="margin-left:30px;color:gray;width:200px;font-size:10px"/>
+            <br></br>
+            <br></br><p>A private area full of dedicated offers and promotions for you!</p>
+            <br></br>
+            <p id="youremail" style="font-size:10px;margin-left:10px;width:250px;border-style: solid;border-width: 1px; border-top:none;border-left:none;border-right:none;color:grey" >         
+            Choose your Industry</p>
+            <br></br>
+                <select id="select" ng-model="bpTree.response.leadIndustry"  style="color:#959595;margin-left:10px;padding:5px;width:250px;height:40px ;background-color:#F2F2F2;font-size:12px;border-style:solid;border-width:1px" >
+                    <option placeholder="Industry" style="color:black" selected="selected" ng-selected="true">My Industry</option>
+                    <option value="Communication">Communication</option>
+                    <option value="Media">Media</option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Healthcare">Healthcare</option>
+                </select>
+            <br></br>
+            <p align="middle" style="margin-left:30px;font-size:10px;color:gray;width:200px" id="remember">We remember our best client because we take care of them </p>
+            <br></br>        
+                <input id="getin" onclick="validateForm();" ng-click="buttonClick(bpTree.response, control, this,  control.vlcSI[control.itemsKey][0], '', baseCtrl.customHandleSelectedItem)" style="font-size:14px;margin-left:50px;background-color:#EC0000;height:50px; width:150px;color:white;border-style: none" type="submit" value="GET IN!"/ > 
+        </div>
+    </div>
+</div> 
+<!-- <div>
+  <img src="{!$Resource.Part2}" style="margin-left:-8%"/>
+</div> -->
+<div style="width:100%; float: left; height: 125px; background-color: #007a99;">
+    <div style="width:90%; margin:0 auto;">
+        <footer class="footer-distributed">
+            <div class="footer-right" style="float:right">
+                <div class="footer-icons">
+                    <a href="#">
+                        <apex:image styleClass="fa fa-facebook" url="{!URLFOR($Resource.footer_Res,'Footer/13_footer_social_fb.png')}" />
+                    </a>
+                    <a href="https://twitter.com/MY_Telco123?ref_src=twsrc%5Etfw">
+                    
+                    <apex:image styleClass="fa fa-facebook" url="{!URLFOR($Resource.footer_Res,'Footer/14_footer_social_tw.png')}"/>
+                    </a>
+                    <a href="#">
+
+                        <apex:image styleClass="fa fa-facebook" url="{!URLFOR($Resource.footer_Res,'Footer/15_footer_social_yt.png')}"/>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <div>
+        </div>
+    </div>
+</div>   
+</apex:page>

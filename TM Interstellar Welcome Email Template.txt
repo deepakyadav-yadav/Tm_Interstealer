@@ -1,0 +1,15 @@
+<p>Dear customer,</p>
+
+<p>Welcome to MyTelco! </p>
+<p>Your Username is : {!Receiving_User.Username}</p>
+
+ 
+<p> <b></b></p>
+<p>Get ready for amazing digital experience with MyTelco!</p>
+<br>
+
+To get started, go to <u><a href=" https://eaglelabap-apac.cs89.force.com/TMDigital/s/my-order" target="_blank">Community </a></u><br></br>
+
+<div>Thanks! </div>
+<br>
+<img src="https://tm--eaglelabap--c.cs89.content.force.com/servlet/servlet.ImageServer?id=0150E000000BhTa&oid=00D0E0000004gOo&lastMod=1519267194000" align="left"  height="50"/>

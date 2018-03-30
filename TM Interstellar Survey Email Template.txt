@@ -1,0 +1,9 @@
+<p>Dear customer,</p>
+
+<p>Your feedback is important to us to improve our level of service to all our customers.</p>
+<p>We would love to hear from you regarding your recently engagement with us via this <u><a href="https://tm--eaglelabap--c.cs89.visual.force.com/apex/takesurvey?id=a5Y0E000000axPjUAI&cId=none&caId=none">link</a></u></p>
+<br>
+
+<div>Thanks! </div>
+<br>
+<img src="https://tm--eaglelabap--c.cs89.content.force.com/servlet/servlet.ImageServer?id=0150E000000BhTa&oid=00D0E0000004gOo&lastMod=1519267194000" align="left"  height="50"/>

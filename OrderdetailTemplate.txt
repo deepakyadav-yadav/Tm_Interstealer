@@ -1,0 +1,33 @@
+<p>Dear customer,
+<p>Thank you for choosing MyTelco!</p>
+<p>Your order has been submitted successfully..</p>
+<br>
+<table border="2" width="805">
+<tbody>
+<tr style="height:18px">
+<td style="background-color:orange;text-align:center;height:18px" width="161"><strong><span style="color:#0000ff">Order Number</span></strong></td>
+<td style="background-color:orange;text-align:center;height:18px" width="161"><span style="background-color:#ff9900"><strong><span style="color:#0000ff">Amount</span></strong></span></td>
+<td style="background-color:orange;text-align:center;height:18px" width="161"><span style="background-color:#ff9900"><strong><span style="color:#0000ff">Date</span></strong></span></td>
+<td style="background-color:orange;text-align:center;height:18px" width="161"><span style="background-color:#ff9900"><strong><span style="color:#0000ff">Account Name</span></strong></span></td>
+<td style="background-color:orange;text-align:center;height:18px" width="161"><span style="background-color:#ff9900"><strong><span style="color:#0000ff">Status</span></strong></span></td>
+</tr>
+<tr style="height:29px">
+<td style="text-align:center;height:29px"><span style="color:#0000ff">{!Order.Id}</span></td>
+<td style="text-align:center;height:29px"><span style="color:#0000ff">{!Order.TotalAmount} </span></td>
+<td style="text-align:center;height:29px"><span style="color:#0000ff"> <span class="aBn" data-term="goog_1860790143" tabindex="0"><span class="aQJ">{!Order.EffectiveDate}
+ </span></span></span></td>
+<td style="text-align:center;height:29px"><span style="color:#0000ff">{!Account.Name}</span></td>
+<td style="text-align:center;height:29px"><span style="color:#0000ff">{!Order.Status}</span></td>
+</tr>
+</tbody>
+</table>
+<br>
+<p>Shipping/Billing Address:</p>
+<p> {!Order.ShippingAddress} </p>
+<br>
+<p>Click on the following link to track your order: <br><u><a href=" https://eaglelabap-apac.cs89.force.com/TMDigital/s/my-order" target="_blank">Track Order</a></u>.</p>
+<p>Alternatively, download MyTelco mobile app to track your order on the go.</p>
+<br>
+<div>Thanks! </div>
+<br>
+<img src="https://tm--eaglelabap--c.cs89.content.force.com/servlet/servlet.ImageServer?id=0150E000000BhTa&oid=00D0E0000004gOo&lastMod=1519267194000" align="left"  height="50"/>
