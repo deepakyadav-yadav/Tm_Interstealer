@@ -1,0 +1,7 @@
+<p>Dear customer,
+<p>Thank you for choosing MyTelco!</p>
+<p>Your service has been activated.</p>
+<br>
+<div>Thanks! </div>
+<br>
+<img src="https://tm--eaglelabap--c.cs89.content.force.com/servlet/servlet.ImageServer?id=0150E000000BhTa&oid=00D0E0000004gOo&lastMod=1519267194000" align="left"  height="50"/>

@@ -1,0 +1,10 @@
+<p>Dear Customer,</p>
+
+<p>Your order has been saved and is waiting for your return.</p>
+<p> To resume your order, click on the following link:</p>
+<p><b> {!Case.Save_For_Later_Resume_Link__c}</b></p>
+<br>
+
+<div>Thanks! </div>
+<br>
+<img src="https://tm--eaglelabap--c.cs89.content.force.com/servlet/servlet.ImageServer?id=0150E000000BhTa&oid=00D0E0000004gOo&lastMod=1519267194000" align="left"  height="50"/>
